@@ -13,6 +13,15 @@ namespace BankControl.Domain.Entities
             Memo = memo;
         }
 
+        public Transaction(string type, DateTime datePosted, float transactionMont, string memo)
+        {
+           
+            Type = type;
+            DatePosted = datePosted;
+            TransactionMont = transactionMont;
+            Memo = memo;
+        }
+
         public Guid ExtractId { get; private set; }
         public string Type { get; private set; }
         public DateTime DatePosted { get; private set; }
