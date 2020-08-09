@@ -7,6 +7,6 @@ namespace BankControl.Domain.Commands.Mapper.Contracts
 {
     public interface IMapperTransaction
     {
-         List<Transaction> ListTransactionsMapper(List<CreateTransactionCommand> transactionsCommand)
+        List<Transaction> ListTransactionsMapper(List<CreateTransactionCommand> transactionsCommand);
     }
 }
